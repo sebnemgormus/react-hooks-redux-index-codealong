@@ -11,8 +11,13 @@ function CreateTodo() {
   }
 
   function handleSubmit(event) {
+   /*event.preventDefault();
+    dispatch(todoAdded(text));
+    */
+   //add cleanup
     event.preventDefault();
     dispatch(todoAdded(text));
+    setText("");
   }
 
   return (
